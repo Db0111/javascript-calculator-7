@@ -1,5 +1,3 @@
-import Calculator from '../calculation/calculator.js';
-
 export default function splitCustom(inputs) {
     let splitedInputs = [];
     const startIdx = inputs.indexOf('//');
@@ -19,5 +17,5 @@ export default function splitCustom(inputs) {
 
     const splitedNum = splitedInputs.map((num) => Number(num));
 
-    return Calculator(splitedNum);
+    return splitedNum;
 }
