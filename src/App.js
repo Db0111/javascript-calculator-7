@@ -24,9 +24,9 @@ class App {
                 )
             ) {
                 Console.print(`결과 : ${Calculator(splitInputs(inputs))}`);
-            } else if (typeof Number(inputs) === 'number') {
+            } else if (!isNaN(inputs) && inputs.trim() !== '') {
                 Console.print(`결과 : ${inputs}`);
-            } else if (inputs === '') {
+            } else if (inputs.trim() === '') {
                 Console.print(`결과 : 0`);
             }
         }
