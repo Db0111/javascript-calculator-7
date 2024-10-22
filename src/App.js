@@ -1,9 +1,9 @@
 /* eslint-disable operator-linebreak */
 import { Console } from '@woowacourse/mission-utils';
-import splitInputs from './components/split/splitInputs.js';
-import splitCustom from './components/split/splitCustom.js';
-import Calculator from './components/calculation/calculator.js';
-import validateInputs from './components/validation/validateInputs.js';
+import splitInputs from './utils/split/splitInputs.js';
+import splitCustom from './utils/split/splitCustom.js';
+import Calculator from './utils/calculation/calculator.js';
+import validateInputs from './utils/validation/validateInputs.js';
 
 const DEFAULT_DELIMETERS = [',', ':'];
 class App {
