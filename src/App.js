@@ -11,7 +11,6 @@ class App {
         const inputs = await Console.readLineAsync(
             '문자열 덧셈 계산기를 실행합니다. 계산식을 입력해주세요.\n',
         );
-        validateInputs(inputs);
         if (validateInputs(inputs) === true) {
             if (
                 inputs.includes('//') === true ||
